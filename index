@@ -1,0 +1,28 @@
+$pageArr = DB::select("SELECT * FROM `pages_master` where active='1'");
+        $userTypeArr = DB::select("SELECT * FROM `user_type_master`");
+        
+        $userTypeMaster = array();
+        foreach($userTypeArr as $type)
+        {
+            $userTypeMaster[$type->page_column_name] = $type->user_type;
+        }
+
+
+
+
+
+
+
+
+
+
+<div class="dy-social-btn-container">
+  <a href="https://www.facebook.com/sharer.php?u=https://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs" class="dy-social-btn" target="_blank"><i class="fa fa-facebook-square fa-2x social-share-link__icon social-share-links__icon-facebook"></i></a>
+  <a href="https://twitter.com/home?status=Check this out! https://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs" class="dy-social-btn" target="_blank"><i class="fa fa-twitter fa-2x social-share-link__icon social-share-links__icon-twitter"></i></a>
+    <a href="https://api.whatsapp.com/send?text=Check this out! https://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs" class="dy-social-btn" data-action="share/whatsapp/share"><i class="fa fa-whatsapp fa-2x social-share-link__icon social-share-links__icon-whatsapp"></i></a>
+    <a href="https://www.linkedin.com/cws/share?url=https://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs" class="dy-social-btn" target="_blank"><i class="fa fa-linkedin-square fa-2x social-share-link__icon social-share-links__icon-linkedin"></i></a>
+  <a href="https://www.pinterest.com/pin/create/button/?url=https://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs&amp;media=https%3A%2F%2Fwww.dyclassroom.com%2Fimage%2Fdyclassroom-logo-black-512x512.png&amp;description=check%20this%20out" class="dy-social-btn" target="_blank"><i class="fa fa-pinterest-square fa-2x social-share-link__icon social-share-links__icon-pinterest"></i></a>
+  <a href="https://www.tumblr.com/share?t=Check%20this%20out&amp;v=3&amp;u=https://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs" class="dy-social-btn" target="_blank"><i class="fa fa-tumblr-square fa-2x social-share-link__icon social-share-links__icon-tumblr"></i></a>
+  <a href="https://reddit.com/submit?title=Check%20this%20out&amp;url=https://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs" class="dy-social-btn" target="_blank"><i class="fa fa-reddit-square fa-2x social-share-link__icon social-share-links__icon-reddit"></i></a>
+    <a href="mailto:?Subject=Check%20this%20out%20from%20dyclassroom!&amp;Body=Hello,%0A%0ACheck%20this%20out%20from%20dyclassroom%0A%0ALink:%0Ahttps://www.dyclassroom.com/chartjs/how-to-create-a-doughnut-chart-using-chartjs%0A%0AThanks" class="dy-social-btn"><i class="fa fa-envelope-square fa-2x social-share-link__icon social-share-links__icon-email"></i></a>
+</div>
